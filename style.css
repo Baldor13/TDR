@@ -1,0 +1,24 @@
+#titulo {
+    color: rgb(9, 122, 18);
+    font-size: 45px;
+
+}
+body {
+    background-color: rgba(121, 122, 122, 0.298);
+
+}
+.informacio h1{
+    color: rgb(9, 122, 18);
+    font-size: 25px;
+}
+.informacio p{
+    color: rgb(9, 122, 18);
+    font-size: 18px;
+}
+.foto1 {
+    width: 220px;
+    height: auto;
+}
+.menusuperior {
+    
+}
