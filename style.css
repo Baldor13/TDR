@@ -149,10 +149,52 @@ body {
     border: 1px solid #ccc;
 }
 
+.portada{
+    width: 100%;
+    margin-top: -50px;
+    margin-left: -20px;
+}
+.caixes{
+    display:flex;
+    gap: 12px;
+    align-items: stretch;
+}
+.portada .torrent,
+.portada .qualitat{
+    width: 250px;          
+    height: 180px;        
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8px;
+    color: #ffffff;
+    font-family: inherit;
+}
+.torrent{
+    background: rgb(55, 196, 67);
+}
+.qualitat{
+    background: rgb(34, 118, 41);
+    margin-left: -15px;
+}
+.portada .box-line1 {
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+}
 
-
-
-
+.portada .box-line2 {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+.imatgeportada{
+    margin-left:495px;
+    margin-top:-419px ;
+}
 
 
 

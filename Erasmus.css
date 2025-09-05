@@ -1,0 +1,28 @@
+/* erasmus.css - petites personalitzacions per a la pàgina Erasmus */
+
+/* Hero */
+.section-hero .lead {
+  font-size: 1rem; /* 16px equivalent */
+  color: #333;
+  margin-top: 0.25rem;
+}
+
+/* Column layout: si el global no existeix o es vol canviar aquí es controla */
+.section-columns {
+  display: grid;
+  grid-template-columns: 1fr 18rem;
+  gap: 1rem;
+  align-items: start;
+}
+
+/* Cards específiques d'Erasmus */
+.project-card h2 { font-size: 1.125rem; margin: 0 0 0.5rem; }
+.project-card h4 { font-size: 1rem; margin: 0 0 0.25rem; }
+
+/* Sidebar ajust */
+.sidebar .card { margin-bottom: 1rem; }
+
+/* Responsive: adaptar columnes */
+@media (max-width: 900px) {
+  .section-columns { grid-template-columns: 1fr; }
+}
