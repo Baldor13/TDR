@@ -199,14 +199,3 @@ body {
 
 
 
-
-@media (max-width: 900px) {
-    :root { --menu-padding-horizontal: 12px; }
-    .institucio, .departament { font-size: 14px; }
-    .botodesplegable { font-size: 13px; padding: 5px 8px; }
-}
-
-@media (max-width: 600px) {
-    :root { --menu-height: 88px; --menu-padding-horizontal: 12px; }
-    body { padding-top: var(--menu-height); }
-}
