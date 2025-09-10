@@ -23,8 +23,9 @@ body {
     font-size: 25px;
     font-style: oblique;
 }
+
 .informacio p{
-    color: rgb(9, 122, 18);
+    color: rgb(49, 39, 38);
     font-size: 18px;
     
 }
@@ -61,7 +62,8 @@ body {
 
 
 .logo-button:hover{
-    filter: brightness(2.08);  
+    filter: brightness(1.08);  
+    background-color: #444444;
     outline: none;
 }
 
@@ -138,7 +140,7 @@ body {
 }
 
 .desplegableocult a:hover {
-    background-color: #232323;
+    background-color: #444444;
 }
 
 .desplegable:hover .desplegableocult {
@@ -191,6 +193,13 @@ body {
 }
 .torrent{
     background: rgb(55, 196, 67);
+    text-decoration: none;
+    
+}
+.torrent:hover {
+    background: rgb(75, 216, 87);
+    filter: brightness(1.05); 
+    color: #e0dfdf;    
 }
 .qualitat{
     background: rgb(34, 118, 41);
@@ -212,6 +221,96 @@ body {
     margin-left:495px;
     margin-top:-419px ;
 }
+
+.menu-inferior {
+    background: #2f7a00;      
+    color: #ffffff;
+    padding: 28px 18px;
+    margin-top: 36px;
+    font-size: 15px;
+}
+
+.menuinferiordins {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+.columna{ 
+    flex: 1 1 220px; min-width: 220px; 
+}
+
+
+.subscripcio h4,
+.social h4,
+.contacte strong { 
+    margin: 0 0 8px 0; font-weight: 600; color: #ffffff; 
+}
+.subscripcio p {
+    margin: 0 0 10px 0; color: rgba(255,255,255,0.95); 
+}
+
+
+.mi-form { 
+    display: flex; flex-direction: column; gap: 8px; margin-top: 6px; 
+}
+.mi-form input {
+    padding: 8px 10px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: #fff;
+    color:#000;
+    border-radius: 2px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.mi-btn {
+    width: fit-content;
+    padding: 6px 12px;
+    background: #ffffff;
+    color: #2f7a00;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+
+.mi-social-icons {
+    display:flex; gap:10px; margin-top:6px; align-items:center; 
+}
+.social-icon {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:34px;
+    height:34px;
+    background:#ffffff;
+    color:#2f7a00;
+    text-decoration:none;
+    border-radius:4px;
+    font-weight:700;
+    box-shadow: inset 0 -2px rgba(0,0,0,0.06);
+}
+.social-icon span { display:inline-block; transform: translateY(-1px); }
+
+
+.mi-logo { width:72px; height:auto; display:block; margin-bottom:8px; background:#fff; padding:6px; }
+.mi-contacte-text { color: #ffffff; line-height:1.4; }
+.mi-link { color: rgba(255,255,255,0.92); text-decoration: underline; }
+
+.menu-inferior-bottom {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 13px;
+    color: rgba(255,255,255,0.9);
+}
+
+.social-icon:hover, .mi-btn:hover, .mi-link:hover { opacity: 0.92; transform: translateY(-1px); transition: 120ms ease; }
+
 
 
 
