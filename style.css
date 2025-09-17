@@ -37,6 +37,11 @@ body {
     width: 220px;
     height: auto;
 }
+.foto-portada {
+    margin-left:590px;
+    margin-top:-419px;
+    margin-bottom: 50px;
+}
 .menusuperior {
     position: fixed; 
     top:0;
@@ -180,12 +185,14 @@ body {
 .caixes{
     display:flex;
     gap: 12px;
-    align-items: stretch;
+    
+
+
 }
 .portada .torrent,
 .portada .qualitat{
-    width: 250px;          
-    height: 180px;        
+    width: 300px;          
+    height: 200px;        
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -221,9 +228,99 @@ body {
     font-weight: 700;
     margin-top: 4px;
 }
-.imatgeportada{
-    margin-left:495px;
-    margin-top:-419px ;
+
+
+.six-blocks-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 0;
+    margin-top: -235px;
+    margin-left: 80vw;
+    margin-right: -100px;
+    
+
+}
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    position: relative;
+    padding: 0;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    gap: 6px;
+}
+
+.block-icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 4px;
+}
+
+.block-ieduca { background: #388e3c; }
+.block-afa { background: #979595; }
+.block-cerca { background: #388e3c; }
+.block-erasmus { background: #8bc34a; color: #222; }
+.block-revista { background: #fff; color: #388e3c; }
+.block-menu { background: #388e3c; }
+
+.block-ieduca:hover,
+.block-cerca:hover,
+.block-menu:hover { background: #2f7a00; }
+.block-afa:hover { background: #979595; }
+.block-erasmus:hover { background: #689f38; color: #fff; }
+.block-revista:hover { background: #e8f5e9; color: #2f7a00; }
+
+.block-menu .menun-desplegable {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    z-index: 10;
+}
+.block-menu .botodesplegable {
+    width: 100%;
+    background: #232323;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-top: 6px;
+    padding: 4px 0;
+    cursor: pointer;
+}
+.block-menu .desplegableocult {
+    display: none;
+    background: #232323;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    margin-top: 2px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+.block-menu .menun-desplegable:hover .desplegableocult,
+.block-menu .menun-desplegable:focus-within .desplegableocult {
+    display: block;
+}
+.block-menu .desplegableocult a {
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+.block-menu .desplegableocult a:hover {
+    background: #388e3c;
 }
 
 .menu-inferior {
@@ -357,9 +454,10 @@ body {
 }
 
 .icono:hover, .botointern:hover, .link:hover {
-    opacity: 0.92; 
-    transform: translateY(-1px); 
+    opacity: 0.92;
+    transform: translateY(-1px);
     transition: 120ms ease; }
+
 
 
 
