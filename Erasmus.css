@@ -44,14 +44,14 @@
   display: block;
 }
 
-/* Text */
+
 #erasmus .erasmus-entrada p {
   line-height: 1.6;
   color: #444;
   margin-bottom: 1rem;
 }
 
-/* ===== Galeria d’imatges ===== */
+
 #erasmus .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -452,7 +452,7 @@ body {
 
 #erasmus {
   padding: 3rem 1rem;
-  background-color: #f9f9f9;       /* suau per destacar la secció */
+  background-color: #f9f9f9;       
 }
 
 #erasmus h1 {
@@ -461,12 +461,12 @@ body {
   font-weight: 600;
   color: #333;
   margin-bottom: 2.5rem;
-  border-bottom: 3px solid #4caf50; /* línia decorativa (verd Erasmus) */
+  border-bottom: 3px solid #4caf50; 
   display: inline-block;
   padding-bottom: 0.5rem;
 }
 
-/* Cada article (erasmus-entry) */
+
 #erasmus .erasmus-entry {
   background: #fff;
   border-radius: 8px;
@@ -494,7 +494,7 @@ body {
   display: block;
 }
 
-/* Text */
+
 #erasmus .erasmus-entry p {
   line-height: 1.6;
   color: #444;
@@ -524,7 +524,7 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* ===== Responsive ===== */
+
 @media (max-width: 768px) {
   #erasmus h1 {
     font-size: 1.8rem;
