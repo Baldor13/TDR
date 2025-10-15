@@ -1,27 +1,39 @@
-#titulo {
-    color: rgb(9, 122, 18);
-    font-size: 45px;
-    font-style: oblique;
-
-}
-#titulo,.foto1,h1,h3,h4,h2, p, .informacio {
-    margin-left: 25px;
-}
 :root{
     --page-side-gap: 16px;          
     --menu-padding-horizontal: 16px;  
     --menu-height: 70px;              
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; 
+}
+
 *,
 *::before,
 *::after { box-sizing: border-box; }
+
 body {
     margin: 0;
     padding-top: var(--menu-height); 
     background-color: rgba(121, 122, 122, 0.298);
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
 }
+
+#titulo {
+    color: rgb(9, 122, 18);
+    font-size: 45px;
+    font-style: oblique;
+    margin-left: 25px;
+}
+
+h1, h2, h3, h4, p, .informacio, .foto1 {
+    margin-left: 25px;
+}
+
 .informacio h1{
     color: rgb(9, 122, 18);
     font-size: 25px;
@@ -31,17 +43,19 @@ body {
 .informacio p{
     color: rgb(49, 39, 38);
     font-size: 18px;
-    
 }
+
 .foto1 {
     width: 220px;
     height: auto;
 }
+
 .foto-portada {
     margin-left:590px;
     margin-top:-419px;
     margin-bottom: 50px;
 }
+
 .menusuperior {
     position: fixed; 
     top:0;
@@ -58,8 +72,8 @@ body {
     gap: 12px;
     font-size: 14px;
     z-index: 100;
-
 }
+
 .logo-button {
     display: flex;         
     align-items: center;
@@ -69,14 +83,11 @@ body {
     cursor: pointer;
 }
 
-
 .logo-button:hover{
     filter: brightness(1.08);  
     background-color: #444444;
     outline: none;
 }
-
-
 
 .logo-text {
     display: flex;
@@ -112,7 +123,6 @@ body {
     font-size: 12px;
     margin-bottom: 5px;
 }
-
 
 .desplegable {
     margin-right: 2vw;
@@ -162,6 +172,7 @@ body {
     gap: 15px;
     margin-left: auto;
 }
+
 .Institut {
     display: flex;
     align-items: center;
@@ -188,13 +199,12 @@ body {
     margin-top: -50px;
     margin-left: -20px;
 }
+
 .caixes{
     display:flex;
     gap: 12px;
-    
-
-
 }
+
 .portada .torrent,
 .portada .qualitat{
     width: 300px;          
@@ -208,16 +218,17 @@ body {
     color: #ffffff;
     font-family: inherit;
 }
+
 .torrent{
     background: rgb(55, 196, 67);
     text-decoration: none;
-    
 }
 
 .qualitat{
     background: rgb(34, 118, 41);
     margin-left: -15px;
 }
+
 .portada .box-line1 {
     display: block;
     font-size: 30px;
@@ -231,7 +242,6 @@ body {
     margin-top: 4px;
 }
 
-
 .six-blocks-container {
     display: grid;
     flex: 1;
@@ -241,9 +251,8 @@ body {
     margin-top: -235px;
     margin-left: 79.5vw;
     margin-right: -100px;
-    
-
 }
+
 .block {
     display: flex;
     flex-direction: column;
@@ -268,8 +277,6 @@ body {
     margin-bottom: 4px;
     margin-top: 10px;
 }
-
-
 
 .block-calendari { background: #388e3c; }
 .block-afa { background: #979595; }
@@ -298,7 +305,6 @@ body {
     box-sizing: border-box;
 }
 
-
 .menuinferiordins {
     display: flex;
     gap: 18vw; 
@@ -308,14 +314,15 @@ body {
     justify-content: flex-start;
 }
 
-
 .columna{ 
     flex: 1 1 220px; 
     min-width: 220px; 
 }
+
 .subscripcio {
     margin-left: 0; 
 }
+
 .subscripcio h4,
 .social h4,
 .contacte strong { 
@@ -323,6 +330,7 @@ body {
     font-weight: 600; 
     color: #ffffff; 
 }
+
 .subscripcio p {
     margin: 0 0 10px 0; 
     color: rgba(255,255,255,0.95); 
@@ -334,6 +342,7 @@ body {
     gap: 8px; 
     margin-top: 6px; 
 }
+
 .formulari input {
     padding: 8px 10px;
     border: 1px solid rgba(255,255,255,0.2);
@@ -343,6 +352,7 @@ body {
     width: 100%;
     box-sizing: border-box;
 }
+
 .botointern {
     width: fit-content;
     padding: 6px 12px;
@@ -354,40 +364,107 @@ body {
     font-weight: 600;
 }
 
-
 .iconos {
     display: flex;
     gap: 12px;
     margin-top: 6px;
     align-items: center;
 }
-.icono {
-    display: inline-flex;
-    align-items: center;
+
+ul {
+    list-style: none;
+}
+
+.example-2 {
+    display: flex;
     justify-content: center;
-    width: 48px;
-    height: 48px;
-    padding: 6px;
-    background: #fff;
-    border-radius: 8px;
-    text-decoration: none;
+    align-items: center;
+}
+.example-2 .icon-content {
+    margin: 0 10px;
+    position: relative;
+}
+.example-2 .icon-content .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+.example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+}
+.example-2 .icon-content a {
+    position: relative;
     overflow: hidden;
-    box-sizing: border-box;
-    border: 1px solid rgba(0,0,0,0.06);
-    transition: transform .14s, box-shadow .14s, background .12s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
 }
-.icono img {
-    width: 28px;
-    height: 28px;
-    object-fit: contain;
-    display: block;
+.example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
 }
-.icono:hover,
-.icono:focus {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-    background: #f5fff3;
-    outline: none;
+.example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+}
+.example-2 .icon-content a:hover {
+    color: white;
+}
+.example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover .filled {
+    height: 100%;
+}
+
+.example-2 .icon-content a[data-social="whatsapp"] .filled,
+.example-2 .icon-content a[data-social="whatsapp"] ~ .tooltip {
+    background-color: #128c7e;
+}
+
+.example-2 .icon-content a[data-social="facebook"] .filled,
+.example-2 .icon-content a[data-social="facebook"] ~ .tooltip {
+    background-color: #3b5998;
+}
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+    background: linear-gradient(
+    45deg,
+    #405de6,
+    #5b51db,
+    #b33ab4,
+    #c135b4,
+    #e1306c,
+    #fd1f1f
+);
+}
+.example-2 .icon-content a[data-social="youtube"] .filled,
+.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+    background-color: #ff0000;
 }
 
 .logofinal { 
@@ -399,10 +476,12 @@ body {
     padding: 6px; 
     image-rendering: auto;
 }
+
 .contactetext { 
     color: #ffffff; 
     line-height:1.4; 
 }
+
 .link {
     color: rgba(255,255,255,0.92); 
     text-decoration: underline; 
@@ -419,8 +498,3 @@ body {
     opacity: 0.92;
     transform: translateY(-1px);
     transition: 120ms ease; }
-
-
-
-
-
