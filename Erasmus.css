@@ -1,88 +1,68 @@
-/* ===== Secció Erasmus+ ===== */
-
 #erasmus {
-  padding: 3rem 1rem;
-  background-color: #f9f9f9;      
+    padding: 3rem 1rem;
+    background-color: #f9f9f9;      
 }
 
 #erasmus h1 {
-  text-align: center;
-  font-size: 2.2rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 2.5rem;
-  border-bottom: 3px solid #4caf50; 
-  display: inline-block;
-  padding-bottom: 0.5rem;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2.5rem;
+    border-bottom: 3px solid #4caf50; 
+    display: inline-block;
+    padding-bottom: 0.5rem;
 }
 
 
 #erasmus .erasmus-entrada {
-  background: #fff;
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 #erasmus .erasmus-entrada:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
 
 #erasmus .erasmus-entrada h2 {
-  font-size: 1.5rem;
-  color: #2c3e50;
-  margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
 }
 
 #erasmus .erasmus-entrada .fecha {
-  font-size: 0.9rem;
-  color: #888;
-  margin-bottom: 1rem;
-  display: block;
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 1rem;
+    display: block;
 }
 
 
 #erasmus .erasmus-entrada p {
-  line-height: 1.6;
-  color: #444;
-  margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 1rem;
 }
 
 
 #erasmus .galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 0.8rem;
-  margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.8rem;
+    margin-bottom: 1rem;
 }
 
 #erasmus .galeria img {
-  width: 100%;
-  border-radius: 6px;
-  object-fit: cover;
-  height: 160px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-#erasmus .galeria img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-  #erasmus h1 {
-    font-size: 1.8rem;
-  }
-
-  #erasmus .erasmus-entrada h2 {
-    font-size: 1.3rem;
-  }
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+    height: 160px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 #titulo {
@@ -105,9 +85,39 @@
 *::after { box-sizing: border-box; }
 body {
     margin: 0;
-    padding-top: var(--menu-height); 
-    background-color: rgba(121, 122, 122, 0.298);
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    overflow-x: hidden;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; 
+}
+
+header,
+footer,
+section,
+div {
+    width: 100%;
+    max-width: 100%;
+}
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.portada,
+.menu-inferior,
+.menusuperior,
+.six-blocks-container {
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
 }
 .informacio h1{
     color: rgb(9, 122, 18);
@@ -241,12 +251,11 @@ body {
 .menu-cercador {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     margin-left: auto;
 }
 
 .cercador {
-    margin-right: 10px;
     padding: 2px 6px; 
     font-size: 13px;
     border-radius: 4px;
@@ -261,7 +270,7 @@ body {
 
 .portada{
     width: 100%;
-    margin-top: -50px;
+    margin-top: -10px;
     margin-left: -20px;
 }
 .caixes{
@@ -271,8 +280,8 @@ body {
 }
 .portada .torrent,
 .portada .qualitat{
-    width: 250px;          
-    height: 180px;        
+    width: 300px;          
+    height: 200px;        
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -309,12 +318,12 @@ body {
     margin-top: 4px;
 }
 .imatgeportada{
-    margin-left:495px;
+    margin-left:585px;
     margin-top:-419px ;
 }
 
 .menu-inferior {
-    width: 100vw;        
+    width: 100%;        
     position: relative;    
     left: 50%;              
     transform: translateX(-50%);
@@ -448,90 +457,291 @@ body {
     transform: translateY(-1px); 
     transition: 120ms ease; }
 
-/* ===== Secció Erasmus+ ===== */
+
 
 #erasmus {
-  padding: 3rem 1rem;
-  background-color: #f9f9f9;       
+    padding: 3rem 1rem;
+    background-color: #f9f9f9;       
 }
 
 #erasmus h1 {
-  text-align: center;
-  font-size: 2.2rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 2.5rem;
-  border-bottom: 3px solid #4caf50; 
-  display: inline-block;
-  padding-bottom: 0.5rem;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2.5rem;
+    border-bottom: 3px solid #4caf50; 
+    display: inline-block;
+    padding-bottom: 0.5rem;
 }
 
 
 #erasmus .erasmus-entry {
-  background: #fff;
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 #erasmus .erasmus-entry:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
 
 #erasmus .erasmus-entry h2 {
-  font-size: 1.5rem;
-  color: #2c3e50;
-  margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
 }
 
 #erasmus .erasmus-entry .fecha {
-  font-size: 0.9rem;
-  color: #888;
-  margin-bottom: 1rem;
-  display: block;
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 1rem;
+    display: block;
 }
 
 
 #erasmus .erasmus-entry p {
-  line-height: 1.6;
-  color: #444;
-  margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 1rem;
 }
 
-/* ===== Galeria d’imatges ===== */
+
 #erasmus .galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 0.8rem;
-  margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.8rem;
+    margin-bottom: 1rem;
 }
 
 #erasmus .galeria img {
-  width: 100%;
-  border-radius: 6px;
-  object-fit: cover;
-  height: 160px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+    height: 400px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 #erasmus .galeria img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.menusuperior {
+    position: fixed; 
+    top:0;
+    left: 0;              
+    width:100%;
+    height: 40px;   
+    right:0;
+    background-color: #232323;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--menu-padding-vertical) var(--menu-padding-horizontal);
+    gap: 12px;
+    font-size: 14px;
+    z-index: 100;
+}
+.logo-button {
+    display: flex;         
+    align-items: center;
+    gap: 0.6rem;                
+    text-decoration: none;      
+    color: inherit;             
+    cursor: pointer;
+}
+.logo-button:hover{
+    filter: brightness(1.08);  
+    background-color: #444444;
+    outline: none;
+}
+.logo-text {
+    display: flex;
+}
+.logo-img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 0vw;
+    margin-left: 0.3vw;
+    height: 25px;
+    background-color: white;
+}
+.textos {
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+    line-height: 1;
+}
+.institucio {
+    margin-top: 5px;
+    color: white;
+    margin-bottom: -13px;
+    font-size: 12px;
+}
+.departament {
+    margin-top: -8px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.desplegable {
+    margin-right: 2vw;
+    margin-left: 2vw;
+    position: relative;
+    display: inline-block;
+}
+.botodesplegable {
+    background-color: #232323;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 6px 10px;
+    text-transform: uppercase;
+}
+.desplegableocult {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #232323;
+    min-width: 160px;
+    z-index: 1;
+}
+.desplegableocult a {
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+.desplegableocult a:hover {
+    background-color: #444444;
+}
+.desplegable:hover .desplegableocult {
+    display: block;
+}
+.menu-cercador {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+}
+.cercador {
+    margin-right: -300px;
+    padding: 2px 6px; 
+    font-size: 13px;
+    border-radius: 4px;
+    border: none;
+}
+.cercador input {
+    padding: 3px 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.portada{
+    width: 100%;
+    margin-top: 20px; 
+    margin-left: -20px;
+}
+.caixes{
+    display:flex;
+    gap: 12px;
+    align-items: stretch;
+}
+.portada .torrent,
+.portada .qualitat{
+    width: 300px;          
+    height: 200px;        
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8px;
+    color: #ffffff;
+    font-family: inherit;
+}
+.torrent{
+    background: rgb(55, 196, 67);
+    text-decoration: none;
+    
+}
+.torrent:hover {
+    background: rgb(75, 216, 87);
+    filter: brightness(1.05); 
+    color: #e0dfdf;    
+}
+.qualitat{
+    background: rgb(34, 118, 41);
+    margin-left: -15px;
+}
+.portada .box-line1 {
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.portada .box-line2 {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 4px;
 }
 
 
-@media (max-width: 768px) {
-  #erasmus h1 {
-    font-size: 1.8rem;
-  }
-
-  #erasmus .erasmus-entry h2 {
-    font-size: 1.3rem;
-  }
+.six-blocks-container {
+    display: grid;
+    flex: 1;
+    grid-template-columns: repeat(3, 135px);
+    grid-template-rows: repeat(2, 91px);
+    gap: 0;
+    margin-top: -186px;
+    margin-left: 79.5vw;
+    margin-right: -100px;
 }
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    padding: 0;
+    height: 91px;
+    width: 135px;
+    text-align: center;
+    gap: 6px;
+}
+.icono1 {
+    width: 40px;
+    height: 32px;
+    margin-bottom: 4px;
+    margin-top: 10px;
+}
+.block-calendari { background: #388e3c; }
+.block-afa { background: #979595; }
+.block-IniciaSessió { background: #388e3c; }
+.block-Noticies { background: #8bc34a; color: #222; }
+.block-revista { background: #fff; color: #388e3c; }
+.block-menu { background: #388e3c; }
+.block-calendari:hover,
+.block-IniciaSessió:hover,
+.block-menu:hover { background: #2f7a00; }
+.block-afa:hover { background: #979595; }
+.block-Noticies:hover { background: #689f38; color: #fff; }
+.block-revista:hover { background: #e8f5e9; color: #2f7a00; }
 
