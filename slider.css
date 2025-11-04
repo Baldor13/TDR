@@ -422,6 +422,11 @@ body {
 
 /* slider */
 
+.títol {
+    color: #2e7d32;
+
+}
+
 .slider {
     width: 600px; 
     height: 400px; 
