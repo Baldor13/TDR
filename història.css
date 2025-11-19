@@ -50,214 +50,15 @@ h1, h2, h3, h4, p, .informacio, .foto1 {
     gap: 20px;
     flex-wrap: wrap;
 }
-.card2 {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 10px;
-    margin-left: 100px;
-}
 
-.foto1{
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 10px;
-    margin-left: 40px;
-}
-.card2-rainbow {
-    display: block;
-    width: 325px;
-    height: auto;    
-    border-radius: 0.6rem;
-    object-fit: cover;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-    transition: transform .18s ease, filter .18s ease;
-}
-.card2-rainbow:hover,.card2 {
-    transform: translateY(-4px) scale(1.03);
-    filter: saturate(1.05);
-}
 .foto1 {
     width: 500px;
     height: auto;
-    object-fit: cover;
 }
-
-
-.card2 {
-    position: relative;
-    margin-left: 150px;
-    width: 341px;
-    height: 341px;
-    padding: 8px;              
-    border-radius: 1rem;
-    background: transparent;
-    overflow: visible;
-    z-index: 1;
-}
-
-.card2::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    padding: 0;
-
-    background: conic-gradient(
-        #f82121, 
-        #f8a136, 
-        #f8f66f, 
-        #00be39, 
-        #427bff, 
-        #a401bd, 
-        #f30000  
-    );
-    z-index: 0;
-    transform-origin: 50% 50%;
-    filter: saturate(1.1);
-    animation: card2-hue 8s linear infinite;
-}
-
-
-@keyframes card2-hue {
-    from { filter: saturate(1.1) hue-rotate(0deg); }
-    to   { filter: saturate(1.1) hue-rotate(360deg); }
-}
-
-
-.card2 .card2-info {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    border-radius: calc(1rem - 8px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-
-.card3 {
---background: linear-gradient(to right, #000000 0%, #036908 100%);
-    position: relative;
-    width: 550px;          
-    height: 342px;
-    padding: 12px;
-    border-radius: 1.2rem;
-    background: transparent;
-    overflow: hidden;
-    z-index: 1;
-    transition: transform .18s ease, box-shadow .18s ease;
-}
-
-.card3:hover {
-    transform: translateY(-6px) scale(1.03);
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
-    cursor: pointer;
-}
-
-.card3::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    padding: 0;
-    background: linear-gradient(90deg,
-        #2ecc71 0%,
-        #27ae60 20%,
-        #16a085 40%,
-        #1abc9c 60%,
-        #145a32 80%,
-        #0b3b20 100%
-    );
-    z-index: 0;
-    pointer-events: none;
-    filter: saturate(1.05);
-}
-
-.card3-img {
-    position: absolute;
-    inset: 14px; 
-    width: calc(100% - 28px);
-    height: calc(100% - 28px);
-    object-fit: cover;
-    border-radius: calc(1.2rem - 14px);
-    display: block;
-    z-index: 1;
-    transition: transform .18s ease, filter .18s ease;
-}
-
-.card3:hover .card3-img {
-    transform: scale(1.03);
-    filter: brightness(0.97);
-}   
-
-@media (max-width: 880px) {
-    .card-row { flex-direction: column; gap: 14px; margin-left: 12px; }
-    .card2, .card3 { width: 100%; height: auto; padding: 10px; }
-    .card2-rainbow, .card3-img { position: relative; inset: auto; width: 100%; height: auto; border-radius: .8rem; }
-}
-
-
-
-
-.card3 .title {
-    font-weight: bold;
-    letter-spacing: 0.1em;
-}
-
-.card3:hover::before,
-.card3:hover::after {
-    opacity: 0;
-}
-
-
-
-.card2,
-.card2::before,
-.card2 .card2-info {
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-}
-
-
-@keyframes card2-spin {
-    from { transform: rotate(0deg); }
-    to   { transform: rotate(360deg); }
-}
-
-
-
-.card2-info {
---color: #181818;
-    background: var(--color);
-    color: var(--color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-    border-radius: .7rem;
-}
-
-.card2 .title {
-    font-weight: bold;
-    letter-spacing: .1em;
-}
-
-
-.card2:hover::after {
-    opacity: 0;
-}
-
-
 .card {
     position: relative;
     width: 48%;
     max-width: 1000px;
-    margin-bottom: 150px;
-    margin-top: 40px;
     height: 400px;
     background-color: #f2f2f2;
     border-radius: 10px;
@@ -267,6 +68,8 @@ h1, h2, h3, h4, p, .informacio, .foto1 {
     box-shadow: 0 0 0 5px #ffffff80;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     perspective: 900px; 
+    margin-bottom: 100px;
+    margin-top: 50px;
 }
 
 .card:hover {
@@ -285,6 +88,7 @@ h1, h2, h3, h4, p, .informacio, .foto1 {
     z-index: 1;         
 }
 
+
 .card__content {
     position: absolute;
     top: 0;
@@ -300,9 +104,12 @@ h1, h2, h3, h4, p, .informacio, .foto1 {
     z-index: 2;
 }
 
+
 .card:hover .card__content {
     transform: rotateX(0);
 }
+
+
 .card:hover .card-imatge {
     filter: brightness(0.7);
     transform: scale(1.02);
@@ -856,49 +663,4 @@ ul {
 .icones-de-contacte .icona-contingut a[data-xarxa="moodle"] .omplert,
 .icones-de-contacte .icona-contingut a[data-xarxa="moodle"] ~ .descripcio {
     background-color: #f0a500; 
-}
-<<<<<<< HEAD
-
-
-.card-row {
-    display: flex;
-    gap: 22px;
-    align-items: flex-start;
-    margin-left: 50px; 
-    position: relative; 
-    z-index: 30;
-    margin-top: 10px;
-}
-
-
-.card-row .card3 {
-    margin-left: 150px; 
-}
-
-.card3 {
-    position: relative; 
-    z-index: 35;
-}
-
-.card3-img {
-    z-index: 40; 
-    position: absolute; 
-    inset: 14px;
-    width: 525px;
-    height: auto;
-    object-fit: cover;
-}
-
-
-.card3::before,
-.card3::after {
-    opacity: 1;
-    transition: opacity .18s ease, filter .18s ease;
-}
-
-
-.card3:hover::before,
-.card3:focus-within::before,
-.card3:active::before {
-    opacity: 1;
 }
