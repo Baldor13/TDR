@@ -54,7 +54,6 @@ h1, h2, h3, h4, p, .informacio, .foto1 {
     display: inline-block;
     vertical-align: top;
     margin-top: 10px;
-    margin-left: 100px;
 }
 
 .foto1{
@@ -85,7 +84,7 @@ h1, h2, h3, h4, p, .informacio, .foto1 {
 
 .card2 {
     position: relative;
-    margin-left: 150px;
+    margin-left: 70px;
     width: 341px;
     height: 341px;
     padding: 8px;              
@@ -191,14 +190,6 @@ h1, h2, h3, h4, p, .informacio, .foto1 {
     transform: scale(1.03);
     filter: brightness(0.97);
 }   
-
-@media (max-width: 880px) {
-    .card-row { flex-direction: column; gap: 14px; margin-left: 12px; }
-    .card2, .card3 { width: 100%; height: auto; padding: 10px; }
-    .card2-rainbow, .card3-img { position: relative; inset: auto; width: 100%; height: auto; border-radius: .8rem; }
-}
-
-
 
 
 .card3 .title {
@@ -328,7 +319,7 @@ h1, h2, h3, h4, p, .informacio, .foto1 {
 }
 
 .foto-portada {
-    margin-left:590px;
+    margin-left:580px;
     margin-top:-419px;
     margin-bottom: 50px;
 }
@@ -526,8 +517,7 @@ h1, h2, h3, h4, p, .informacio, .foto1 {
     grid-template-rows: repeat(2, 91px);
     gap: 0;
     margin-top: -235px;
-    margin-left: 79.5vw;
-    margin-right: -100px;
+    margin-left: 76.5vw;
 }
 
 .block {
@@ -863,7 +853,7 @@ ul {
     display: flex;
     gap: 22px;
     align-items: flex-start;
-    margin-left: 50px; 
+    margin-left: 0px; 
     position: relative; 
     z-index: 30;
     margin-top: 10px;
@@ -871,7 +861,7 @@ ul {
 
 
 .card-row .card3 {
-    margin-left: 150px; 
+    margin-left: 60px; 
 }
 
 .card3 {
@@ -900,4 +890,41 @@ ul {
 .card3:focus-within::before,
 .card3:active::before {
     opacity: 1;
+}
+
+@media screen and (max-width: 1920px) {
+    body, footer{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 1280px) {
+    body, footer{
+        background-position: 80%;
+    }
+    
+}
+@media screen and (max-width: 990px) {
+    body, footer{
+        background-position: 60%;
+    }
+    
+}
+@media screen and (max-width: 720px) {
+    body, footer{
+        background-position: 50%;
+    }
+    
+}
+@media screen and (max-width: 420px) {
+    body, footer{
+        background-position: 30%;
+    }
+    
+}
+@media screen and (max-width: 220px) {
+    body, footer{
+        background-position: 15%;
+    }
+    
 }

@@ -38,8 +38,8 @@ body {
     height: auto;
 }
 .foto-portada {
-    margin-left:590px;
-    margin-top:-419px;
+    margin-left: 580px;
+    margin-top: -419px;
     margin-bottom: 50px;
 }
 .menusuperior {
@@ -239,10 +239,7 @@ body {
     grid-template-rows: repeat(2, 91px);
     gap: 0;
     margin-top: -235px;
-    margin-left: 79.5vw;
-    margin-right: -100px;
-    
-
+    margin-left: 76.5vw;
 }
 .block {
     display: flex;
