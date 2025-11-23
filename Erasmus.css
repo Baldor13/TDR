@@ -324,8 +324,9 @@ html {
     margin-top: 4px;
 }
 .imatgeportada{
-    margin-left:585px;
-    margin-top:-419px ;
+    margin-left: 580px;
+    margin-top: -419px;
+    margin-bottom: 50px;
 }
 
 .menu-inferior {
@@ -711,9 +712,8 @@ html {
     grid-template-columns: repeat(3, 135px);
     grid-template-rows: repeat(2, 91px);
     gap: 0;
-    margin-top: -186px;
-    margin-left: 79.5vw;
-    margin-right: -100px;
+    margin-top: -235px;
+    margin-left: 76.5vw;
 }
 .block {
     display: flex;
