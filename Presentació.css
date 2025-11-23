@@ -229,7 +229,7 @@ body {
     grid-template-columns: repeat(3, 135px);
     grid-template-rows: repeat(2, 91px);
     gap: 0;
-    margin-left: 79.5vw;
+    margin-left: 74vw;
     margin-right: -100px;
 }
 

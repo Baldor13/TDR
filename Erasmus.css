@@ -116,9 +116,14 @@ html {
 .menu-inferior,
 .menusuperior,
 .six-blocks-container {
-    width: 100vw;
-    max-width: 100vw;
-    box-sizing: border-box;
+    display: grid;
+    flex: 1;
+    grid-template-columns: repeat(3, 135px);
+    grid-template-rows: repeat(2, 91px);
+    gap: 0;
+    margin-top: -235px;
+    margin-left: 74vw;
+    margin-right: -100px;
 }
 .informacio h1{
     color: rgb(9, 122, 18);

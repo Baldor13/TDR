@@ -333,7 +333,7 @@ h1, h2, h3, h4, p, .informacio, .foto1 {
     grid-template-rows: repeat(2, 91px);
     gap: 0;
     margin-top: -235px;
-    margin-left: 79.5vw;
+    margin-left: 74vw;
     margin-right: -100px;
 }
 
