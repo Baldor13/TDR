@@ -187,14 +187,16 @@ body {
     width: 100%;
     margin-top: -50px;
     margin-left: -20px;
+    height: -100px;
 }
+
 .caixes{
     display:flex;
     gap: 12px;
+    transform: scaleY(0.8);
     
-
-
 }
+
 .portada .torrent,
 .portada .qualitat{
     width: 300px;          
@@ -212,6 +214,11 @@ body {
     background: rgb(55, 196, 67);
     text-decoration: none;
     
+}
+.foto-logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 .qualitat{
