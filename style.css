@@ -147,6 +147,7 @@ h1, h2, h3, h4, p, .informacio, .foto1 {
     overflow: hidden;
     z-index: 1;
     transition: transform .18s ease, box-shadow .18s ease;
+    right: 20px;
 }
 
 .card3:hover {
@@ -198,6 +199,7 @@ h1, h2, h3, h4, p, .informacio, .foto1 {
 }
 
 .card3:hover::before,
+
 .card3:hover::after {
     opacity: 0;
 }
@@ -317,11 +319,16 @@ h1, h2, h3, h4, p, .informacio, .foto1 {
     color: #777;
     line-height: 1.4;
 }
+.foto-logo {
+    transform: scale(0.5);
+    margin-top: -20px
 
+}
 .foto-portada {
-    margin-left:580px;
+    margin-left:500px;
     margin-top:-419px;
     margin-bottom: 50px;
+    transform: scaleY(0.83);
 }
 
 .menusuperior {
@@ -471,9 +478,24 @@ h1, h2, h3, h4, p, .informacio, .foto1 {
 .caixes{
     display:flex;
     gap: 12px;
+    transform: scaleY(0.8);
+    
 }
 
-.portada .torrent,
+.portada .torrent{
+    width: 300px;          
+    height: 200px;        
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8px;
+    color: #ffffff;
+    font-family: inherit;
+    margin-right: -80px;
+
+}
 .portada .qualitat{
     width: 300px;          
     height: 200px;        
@@ -485,16 +507,23 @@ h1, h2, h3, h4, p, .informacio, .foto1 {
     padding: 8px;
     color: #ffffff;
     font-family: inherit;
+    margin-left: 8px;
 }
 
 .torrent{
     background: rgb(55, 196, 67);
     text-decoration: none;
+    margin-left: -10px;
+    margin-top: -19px;
+    transform: scale(0.8);
 }
 
 .qualitat{
     background: rgb(34, 118, 41);
-    margin-left: -15px;
+    margin-left: 0px;
+    margin-top: -19px;
+    transform: scale(0.8);
+    
 }
 
 .portada .box-line1 {
@@ -516,9 +545,10 @@ h1, h2, h3, h4, p, .informacio, .foto1 {
     grid-template-columns: repeat(3, 135px);
     grid-template-rows: repeat(2, 91px);
     gap: 0;
-    margin-top: -235px;
+    margin-top: -253px;
     margin-left: 74vw;
-    margin-right: -100px;
+    margin-right: -420px;
+    transform: scale(0.8);  
 }
 
 .block {
@@ -544,6 +574,7 @@ h1, h2, h3, h4, p, .informacio, .foto1 {
     height: 32px;
     margin-bottom: 4px;
     margin-top: 10px;
+    
 }
 
 .block-calendari { background: #388e3c; }
