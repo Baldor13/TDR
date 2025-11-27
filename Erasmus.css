@@ -1,6 +1,6 @@
 #erasmus {
-    padding: 3rem 1rem;
-    background-color: #f9f9f9;      
+    width: 16000px;
+    margin: 0 auto;    
 }
 
 #erasmus h1 {
@@ -13,20 +13,27 @@
     display: inline-block;
     padding-bottom: 0.5rem;
 }
-
+html{
+    background-color: rgba(255,255,255,0.92);
+}
 
 #erasmus .erasmus-entrada {
-    background: #fff;
+    width: 1480px;               
+    margin: 0 auto;       
+    background-color: #ffffff;
     border-radius: 8px;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    min-height: 832px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 #erasmus .erasmus-entrada:hover {
     transform: translateY(-4px);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 #erasmus .erasmus-entrada h2 {
@@ -117,9 +124,8 @@ html {
 
 
 .menu-inferior {
-    width: 100%;        
-    position: relative;    
-    left: 50%;              
+    width: 100vw;        
+    position: relative;                  
     transform: translateX(-50%);
     background: #2f7a00;      
     color: #ffffff;
@@ -253,10 +259,6 @@ html {
 
 
 
-#erasmus {
-    padding: 3rem 1rem;
-    background-color: #f9f9f9;       
-}
 
 #erasmus h1 {
     text-align: center;
@@ -328,8 +330,6 @@ html {
 }
 
 
-/*menu superior nou*/
-
 :root{
     --page-side-gap: 16px;          
     --menu-padding-horizontal: 16px;  
@@ -351,7 +351,7 @@ html, body {
 body {
     margin: 0;
     padding-top: var(--menu-height); 
-    background-color: rgba(121, 122, 122, 0.298);
+    background-color: rgba(255, 255, 255, 0.298);
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
 }
 
@@ -542,7 +542,7 @@ h1, h2, h3, h4, p, .informacio, .foto1 {
 .card2::before,
 .card2 .card2-info {
     -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 
@@ -878,7 +878,7 @@ h1, h2, h3, h4, p, .informacio, .foto1 {
     grid-template-rows: repeat(2, 91px);
     gap: 0;
     margin-top: -253px;
-    margin-left: 74vw;
+    margin-left: 69.5vw;
     margin-right: -420px;
     transform: scale(0.8);  
 }
@@ -924,16 +924,13 @@ h1, h2, h3, h4, p, .informacio, .foto1 {
 .block-revista:hover { background: #e8f5e9; color: #2f7a00; }
 
 .menu-inferior {
-    width: 100vw;        
+    width: 10000vw;        
     position: relative;    
     left: 50%;              
     transform: translateX(-50%);
     background: #2f7a00;      
-    color: #ffffff;
-    padding: 28px 0;     
-    margin: 0;       
+    color: #ffffff;     
     font-size: 20px;
-    box-sizing: border-box;
 }
 
 .menuinferiordins {
