@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <script src="../assets/js/color-modes.js"></script>
+    <link href="història.css" rel="stylesheet" />
     <link rel="icon" href="./Images/favicon-32x32.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>INS Torrent dels Alous | La qualitat la fan les persones - Àgora </title>
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <div class="menusuperior">
         <div class="logo-text">
             <a class="logo-button" href="https://www.gencat.cat" target="_blank" aria-label="Generalitat de Catalunya">
@@ -43,11 +46,10 @@
             <div class="desplegable">
                 <button class="botodesplegable">MENÚ ▼</button>
                 <div class="desplegableocult">
-                <a href="Noticies.html">Notícies</a>
+                <a href="slider.html">Notícies</a>
                 <a href="Erasmus.html">Erasmus</a>
                 <a href="https://ampatorrentalous.wixsite.com/my-site">AFA</a>
                 <a href="https://login.ieduca.com/?error=login.no_token&lang=ca&centre=instda&modul=base&urlback=Lw%3D%3D">IEduca</a>
-            
                 <a href="slider.html">Revista i Biblioteca</a>
                 </div>
             </div>
@@ -57,7 +59,7 @@
                 <button class="botodesplegable">L'institut ▼</button>
                 <div class="desplegableocult">
                 <a href="Presentació.html">Presentació</a>
-                <a href="Historia.html">Història</a>
+                <a href="història.html">Història</a>
                 <a href="Equiphuma.html">Equip Humà</a>
                 <a href="https://maps.app.goo.gl/gqvkDsoCmh7vA1fT8">On Som</a>
                 </div>
@@ -74,8 +76,7 @@
     <div class="portada">
         <div class="caixes">
             <a href="index.html" class="torrent" >
-                <span class="box-line1">Institut</span>
-                <span class="box-line2">Torrent Dels Alous</span>
+                <img src="Images\logo.png" alt="Institut Torrent dels Alous" class="foto-logo">
             </a>
             <div class="qualitat">
                 <span class="box-line1">La qualitat</span>
@@ -88,36 +89,113 @@
     <div class="six-blocks-container">
         <a href="./Images/CALENDARI MENSUAL COLORS_CURS 25_26.pdf" target="_blank" class="block block-calendari">
             <img src="data:image/png;base64,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" alt="calendari" class="icono1">
-            <span>Calendari</span>
+            
         </a>
         <a href="https://ampatorrentalous.wixsite.com/my-site" class="block block-afa">
             <img src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" alt="afa" class="icono1">
-            <span>afa</span>
+
         </a>
         <a href="https://agora.xtec.cat/ins25desetembre/wp-login.php?redirect_to=https%3A%2F%2Fagora.xtec.cat%2Fins25desetembre%2F" target="_blank" class="block block-IniciaSessió">
             <img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" alt="Inicia Sessió" class="icono1">
-            <span>Inicia Sessió</span>
+            
         </a>
-        <a href="Noticies.html" class="block block-Noticies">
+        <a href="final-notícies.html" class="block block-Noticies">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSCpvzp44YA-Z7x_PSw-R8Wp2G5fdddaX3UA&s" alt="Noticies" class="icono1">
-            <span>Noticies</span>
+            
         </a>
-        <a href="Revista i Biblioteca.html" class="block block-revista">
+        <a href="slider.html" class="block block-revista">
             <img src="https://cdn-icons-png.flaticon.com/512/2991/2991108.png" alt="revista i biblioteca" class="icono1">
-            <span>revista i biblioteca</span>
+            
         </a>
-        <div class="block block-menu">
-            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="menú" class="icono1">
-            <span>menú</span>
+        
+        <a href="https://drive.google.com/file/d/1nVSJsfKrLAeoSnw-kIAbsQisA3zcUrW2/view" target="_blank">
+            <div class="block block-menu">
+                <img src="Images\normas.png" alt="normas" class="icono1">
             </div>
+        </a>
         </div>
     </div>
     </div>
+    
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1>La nostra història</h1>
+            <p class="lead text-body-secondary">
+              El Torrent dels Alous és un institut amb més de deu anys d'història. Va néixer cap a l'any 2011, prop del barri 25 de Setembre, a Rubí. Al principi es feien les classes a uns mòduls que es van instal·lar, però a poc a poc es va construir l'edifici que coneixem ara! En aquesta recopilació d'imatges podreu veure com és la història del nostre institut.
+            </p>
+            
+          </div>
+        </div>
+
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Images/imghist1.jpg" class="d-block w-100" alt="Slide 1">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>El primer curs!</h5>
+        <p>L'institut va començar el seu primer curs l'any 2011-12. Van començar les activitats educatives amb només 7 professors! Entre ells encara estan l'Anna Malonda i l'Ana Colomina.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Images/imghist2.PNG" class="d-block w-100" alt="Slide 2">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Primera graduació!</h5>
+        <p>El curs 2014-15 es va graduar en l'ESO la primera promoció del Torrent. Tot i que encara es feien classes als mòduls, la graduació es va donar lloc en l'escola 25 de Setembre.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Images/imghist3.jpg" class="d-block w-100" alt="Slide 3">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Comença la construcció!</h5>
+        <p>Al 2016-17 la construcció de l'edifici principal també! La primera promoció de tot l'institut es va graduar en batxillerat, i es celebra per primera vegada el Carnaval!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Images/imghist4.jpg" class="d-block w-100" alt="Slide 4">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Construcions... i Erasmus!</h5>
+        <p>El 2017-18, per primer cop el Torrent dels Alous va rebre una beca Erasmus, per la qual unes professores van visitar Dinamarca. A més a més, la construcció de l'edifici encara estava en procés, però a poc a poc anava prenent forma.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Images/imghist5.jpeg" class="d-block w-100" alt="Slide 5">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Tenim un nou edifici!</h5>
+        <p>Finalment, en el curs 2018-19 estrenem nou edifici! Ja va ser temps de canviar els antics mòduls per un nou edifici, més gran, modern i amb totes les comoditats i necessitats. El Torrent dels Alous va agafar una nova identitat.</p>
+      </div>
+    </div>
+  </div>
+
+ 
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
 
 
-
-
+    
 
 
 
@@ -168,7 +246,7 @@
                 </ul>
             </div>
             <div class="columna contacte">
-                <img src="./Images/favicon-32x32.png" alt="Logo Institut Torrent dels Alous" class="logofinal" />
+                <img src="Images\logo.png" alt="Logo Institut Torrent dels Alous" class="logofinal" />
                 <div class="contactetext">
                     <strong>INS Torrent dels Alous</strong><br>
                     Ptge. Marconi, 13-15<br>
@@ -188,6 +266,5 @@
     </footer>   
 
     </div>
-
-</body>
+  </body>
 </html>
