@@ -1,18 +1,102 @@
 <!DOCTYPE html>
 <html lang="cat">
 <head>
-    <meta charset="UTF-8">
-    <script src="../assets/js/color-modes.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="final-notícies.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./Images/favicon-32x32.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    
+    <title>Notícies - INS Torrent dels Alous</title>
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.3/examples/album/"
+    />
+    <script src="../assets/js/color-modes.js"></script>
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <meta name="theme-color" content="#712cf9" />
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: #0000001a;
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow:
+          inset 0 0.5em 1.5em #0000001a,
+          inset 0 0.125em 0.5em #00000026;
+      }
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+      .bd-mode-toggle .bi {
+        width: 1em;
+        height: 1em;
+      }
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+
     <title>INS Torrent dels Alous | La qualitat la fan les persones - Àgora </title>
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <div class="menusuperior">
-        <div class="logo-text">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  
     <div class="menusuperior">
         <div class="logo-text">
             <a class="logo-button" href="https://www.gencat.cat" target="_blank" aria-label="Generalitat de Catalunya">
@@ -36,7 +120,7 @@
                 <a href="https://merli.xtec.cat/merli/cerca/directoriInicial.jsp"target="_blank">Merlí</a>
                 <a href="https://projectes.xtec.cat/clic/es/"target="_blank">JClic</a>
                 <a href="https://projectes.xtec.cat/linkat/"target="_blank">Linkat</a>
-                <a href="https://odissea.xtec.cat/target="_blank"">Odissea</a>
+                <a href="https://odissea.xtec.cat/target="_blank>Odissea</a>
                 <a href="https://educaciodigital.cat/moodle/moodle/"target="_blank">Àgora</a>
                 <a href="https://sinapsi.xtec.cat/ca/"target="_blank">Sinapsi</a>
                 <a href="https://dossier.xtec.cat/" target="_blank">Dossier </a>
@@ -62,7 +146,6 @@
                 <div class="desplegableocult">
                 <a href="Presentació.html">Presentació</a>
                 <a href="història.html">Història</a>
-                <a href="Equiphuma.html">Equip Humà</a>
                 <a href="https://maps.app.goo.gl/gqvkDsoCmh7vA1fT8">On Som</a>
                 </div>
             </div>
@@ -119,7 +202,22 @@
     </div>
     </div>
 
+    <!--album-->
 
+    </header>
+    <main>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Notícies</h1>
+            <p class="lead text-body-secondary"><strong>
+              En aquest apartat trobareu les notícies més rellevants i interessants que tinguin a veure amb el centre, els professors i alumnes.
+            </strong>
+            </p>
+            
+            
+          </div>
+        </div>
       </section>
       <div class="album py-5 bg-body-tertiary">
         <div class="container">
@@ -135,48 +233,15 @@
                   width="100%"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <title>Placeholder</title>
+                  
                   <rect width="100%" height="100%" fill="#55595c"></rect>
                   <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    <img src="Images\imghist1.jpg">
+                    <img src="Images\imgnot1.jpg">
                   </text>
                 </svg>
                 <div class="card-body">
                   <p class="card-text">
-                    L'institut va començar el seu primer curs l'any 2011-12. Van començar les activitats educatives amb només 7 professors! Entre ells encara estan l'Anna Malonda i l'Ana Colomina.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  aria-label="Placeholder: Thumbnail"
-                  class="bd-placeholder-img card-img-top"
-                  height="225"
-                  preserveAspectRatio="xMidYMid slice"
-                  role="img"
-                  width="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    <img src="Images\imghist2.PNG">
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    El curs 2014-15 es va graduar en l'ESO la primera promoció del Torrent. Tot i que encara es feien classes als mòduls, la graduació es va donar lloc en l'escola 25 de Setembre.
+                    COLÒNIES 1r ESO: DIA 3. Avui el temps també ens ha acompanyat i hem seguit amb la ronda de tallers i jocs. 
                   </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -203,12 +268,12 @@
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
                   <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    <img src="Images\imghist3.jpg">
+                    <img src="Images\imgnot2.jpg">
                   </text>
                 </svg>
                 <div class="card-body">
                   <p class="card-text">
-                    Al 2016-17 la construcció de l'edifici principal també! La primera promoció de tot l'institut es va graduar en batxillerat, i es celebra per primera vegada el Carnaval!
+                    COLÒNIES 1r ESO: DIA 2. vui ha sortit un bon dia que ens ha permès desenvolupar les activitats previstes una vegada hem agafat forces després de menjar a la casa.
                   </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -235,14 +300,12 @@
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
                   <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
+                    <img src="Images\imgnot3.jpg">
                   </text>
                 </svg>
                 <div class="card-body">
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    COLÒNIES 1r ESO: DIA 1. Un grup de 70 alumnes de 1r d’ESO i 5 professors de l’equip docent han sortit de colònies el dia 29 d’octubre a passar 3 dies a la natura, zona de La Garrotxa
                   </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -269,15 +332,12 @@
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
                   <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
+                    <img src="Images\imgnot4.jpg">
                   </text>
                 </svg>
                 <div class="card-body">
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
+                    28 D’OCTUBRE: VAGA D’ESTUDIANTS. nformem a totes les famílies, que el pròxim dimarts 28 d’octubre hi ha convocada una vaga
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -303,15 +363,12 @@
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
                   <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
+                    <img src="Images\imgnot5.jpg">
                   </text>
                 </svg>
                 <div class="card-body">
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
+                    15 D’OCTUBRE: VAGA D’ESTUDIANTS. Informem a totes les famílies, des del consell de delegats de 3r i 4t ESO i Batxillerat, que el pròxim dimecres 15 d’octubre de 2025...
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -337,14 +394,12 @@
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
                   <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
+                    <img src="Images\imgnot6.jpg">
                   </text>
                 </svg>
                 <div class="card-body">
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    2 D’OCTUBRE: VAGA D’ESTUDIANTS. Informem a totes les famílies que el Sindicat d’Estudiants ha fet convocatòria de vaga per al dia 2 d’octubre. Els motius dels convocants de la vaga són aturar el genocidi a Palestina
                   </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -357,70 +412,7 @@
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  aria-label="Placeholder: Thumbnail"
-                  class="bd-placeholder-img card-img-top"
-                  height="225"
-                  preserveAspectRatio="xMidYMid slice"
-                  role="img"
-                  width="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  aria-label="Placeholder: Thumbnail"
-                  class="bd-placeholder-img card-img-top"
-                  height="225"
-                  preserveAspectRatio="xMidYMid slice"
-                  role="img"
-                  width="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      
-                    </div>
-                    
+            
                   </div>
                 </div>
               </div>
@@ -429,11 +421,6 @@
         </div>
       </div>
     </main>
-    <footer class="text-body-secondary py-5">
-      <div class="container">
-        <p class="float-end mb-1"><a href="#">Torna a dalt</a></p>
-        
-        
       </div>
     </footer>
     <script
@@ -441,8 +428,9 @@
       class="astro-vvvwv3sm"
     ></script>
 
-    
 
+    
+    <!--album-->
     <footer class="menu-inferior">
         <div class="menuinferiordins">
             <div class="columna subscripcio">
